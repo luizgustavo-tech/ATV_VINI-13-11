@@ -60,6 +60,7 @@ openssl dgst -sha256 mensagem_restaurada.txt
 #include <string.h>
 
 // Função para executar comandos do OpenSSL via sistema
+
 void executar_comando(const char *cmd) {
     printf("[EXECUTANDO] %s\n", cmd);
     int status = system(cmd);
@@ -70,6 +71,7 @@ void executar_comando(const char *cmd) {
 }
 
 int main() {
+
     printf("=== APLICATIVO DE CRIPTOGRAFIA HIBRIDA (Criptografia e Assinatura) ===\n");
 
     // 1. Criar arquivo de teste mensagem.txt se não existir
