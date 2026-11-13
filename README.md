@@ -55,22 +55,22 @@ openssl dgst -sha256 mensagem_restaurada.txt
 
 ## CODIGO C: CRIPTOGRAFIA
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
 
-// Função para executar comandos do OpenSSL via sistema
+    // Função para executar comandos do OpenSSL via sistema
 
-void executar_comando(const char *cmd) {
+    void executar_comando(const char *cmd) {
     printf("[EXECUTANDO] %s\n", cmd);
     int status = system(cmd);
     if (status != 0) {
         printf("[ERRO] Falha ao executar o comando.\n");
         exit(1);
     }
-}
+    }
 
-int main() {
+    int main() {
 
     printf("=== APLICATIVO DE CRIPTOGRAFIA HIBRIDA (Criptografia e Assinatura) ===\n");
 
